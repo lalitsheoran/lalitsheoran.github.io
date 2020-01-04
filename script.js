@@ -12,7 +12,7 @@ function getData() {
     }
 
     var request = $.ajax({
-        url: "//www.apilayer.net/api/live?access_key=2caa431a6bdc5af97697925c3198b02f&currencies=" + cFrom + "," + cTo + "&source=USD&format=1"
+        url: "https://apilayer.net/api/live?access_key=2caa431a6bdc5af97697925c3198b02f&currencies=" + cFrom + "," + cTo + "&source=USD&format=1"
     })
     request.done(function (data) {
         console.log(data)
